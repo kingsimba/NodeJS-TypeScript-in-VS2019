@@ -15,16 +15,17 @@ I'd like to use Visual Studio 2019 for really large projects.
 As a large project, I hope:
 
  * It should be divided into many sub-projects.
- * Sub-projects have their own team can be compiled/published(as npm JS package) individually.
- * Compile/Test multiple related projects in a single window.
+ * Sub-projects have their own teams and can be compiled/published(as npm JS package) individually.
+ * Can compile/test related-projects in a single window.
 
 ## Multi-project Support
 
-* Add multiple projects in a solution ✅
+* Add projects into solution ✅
+* Define project dependency ✅
 
   ![](images/solution.png)
 
-* Compile/Test multiple related projects in a single window (Partially ✅)
+* Compile related projects (Partially ✅)
 
   There is no direct support. But it can be achieved with `npm link`
 
@@ -38,10 +39,12 @@ As a large project, I hope:
 
   $ cd NodejsConsoleApp-vs2019
   $ npm link my-module
-  C:\Users\kingsimba\Desktop\NodejsConsoleApp-vs2019\NodejsConsoleApp-vs2019\node_modules\my-calculator -> C:\Users\kingsimba\AppData\Roaming\npm\node_modules\my-calculator -> C:\Users\kingsimba\Desktop\NodejsConsoleApp-vs2019\my-calculator
+  C:\Users\kingsimba\Desktop\NodejsConsoleApp-vs2019\NodejsConsoleApp-vs2019\node_modules\my-calculator 
+  -> C:\Users\kingsimba\AppData\Roaming\npm\node_modules\my-calculator
+  -> C:\Users\kingsimba\Desktop\NodejsConsoleApp-vs2019\my-calculator
   ```
 
-  If someone don't have access to the source code 'my-calculator' he can install from a private npm registry with 'npm i my-calculator'.
+  If someone don't have access to the source code 'my-calculator', he can install from a private npm registry with 'npm i my-calculator'.
 
 ## Building
 
@@ -67,15 +70,15 @@ As a large project, I hope:
 ![](images/debug.png)
 
 * Choose main project ✅
-* Press F5 to debug main project ✅
+* Debug main project(F5) ✅
 * Breakpoints ✅
 * Show local variables & watch variables ✅
 * Modify variable value when paused ✅
 
 ## Testing
 
-* Has Mocha support ✅
-* Show/Run tests in Test Explorer ✅
+* Mocha support ✅
+* Test Explorer ✅
   * Show tests as a tree ✅
   * Top level nodes should be projects ✅
 
