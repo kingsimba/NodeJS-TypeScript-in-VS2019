@@ -1,0 +1,21 @@
+{
+  "name": "my-calculator",
+  "version": "0.0.0",
+  "description": "my-calculator",
+  "main": "calculator.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^8.0.14",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "typescript": "^3.2.2"
+  }
+}

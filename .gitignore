@@ -1,4 +1,4 @@
-/NodejsConsoleApp-vs2019/obj
-/NodejsConsoleApp-vs2019/node_modules
+obj
+node_modules
 *.js
 *.js.map

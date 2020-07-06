@@ -1,3 +1,0 @@
-# NodejsConsoleApp-vs2019
-
-
