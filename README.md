@@ -25,7 +25,7 @@ As a large project, I hope:
 
   ![](images/solution.png)
 
-* Compile related projects (Partially ✅)
+* Link to related projects (Partially ✅)
 
   There is no direct support. But it can be achieved with `npm link`
 
@@ -53,6 +53,9 @@ As a large project, I hope:
   ![](images/build.png)
 
 * Clean ✅
+* Respect Dependency
+  * Build only when dependant projects finished. ✅
+  * Abort if any dependant project fail to build. ❌
 * Fast skip ❌
 
   'tsc --build' will be executed even no file is modified since last build.

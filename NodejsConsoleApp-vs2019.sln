@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsConsoleApp-vs2019", "NodejsConsoleApp-vs2019\NodejsConsoleApp-vs2019.njsproj", "{A3FFF950-9860-4A49-8921-9B32270DCA72}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B883F638-062D-4EAE-8961-F750FD36D613} = {B883F638-062D-4EAE-8961-F750FD36D613}
+	EndProjectSection
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "my-calculator", "my-calculator\my-calculator.njsproj", "{B883F638-062D-4EAE-8961-F750FD36D613}"
 EndProject
