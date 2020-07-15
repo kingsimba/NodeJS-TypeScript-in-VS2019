@@ -1,6 +1,6 @@
-# NodejsConsoleApp-vs2019<!-- omit in toc -->
+# Use VS2019 for Large TypeScript Projects<!-- omit in toc -->
 
-Summary of TypeScript supports in Visual Studio 2019. (Updated in 2020-July-07)
+Summary of TypeScript supports in Visual Studio 2019. (Updated in 2020-July-15)
 
 - [Background](#background)
 - [Multi-project Support](#multi-project-support)
@@ -17,6 +17,9 @@ As a large project, I hope:
  * It should be divided into many sub-projects.
  * Sub-projects have their own teams and can be compiled/published(as npm JS package) individually.
  * Can compile/test related-projects in a single window.
+
+I shall list the problems and related issue reports in the following sections.
+And hopefully, someone in Microsoft can hear my voice and make some progress.
 
 ## Multi-project Support
 
@@ -62,6 +65,8 @@ As a large project, I hope:
   I hope the it can be skipped as in C/C++ compiling.
 
 * Parallel build ❌
+
+  Issue Report: https://developercommunity.visualstudio.com/content/problem/1104481/typescript-parallel-build.html
   
   When I press Ctrl+Shift+B, all projects are built in succession.
   Seems the parallel building feature is not implemented.
@@ -92,11 +97,15 @@ As a large project, I hope:
   * Show the succ/fail status of tests ✅
   * For failed tests, locate file & line through source-mapping. ❌
 
+    Issue Report: https://developercommunity.visualstudio.com/content/problem/1009131/typescript-test-file-go-to-definition-f12-should-g.html
+
     It only shows the name of the javascript file, not the TypeScript file.
 
     ![](images/test-detail.png)
   
   * Show detail of failed test (partially ❌)
+
+    Issue Report https://developercommunity.visualstudio.com/idea/1104482/show-detail-message-for-failed-javascripttypescrip.html
 
     The 'Test Detail Summary' doesn't show details(expect, actual, message) directly. You have to click 'Open additional output for this result' to see details.
 
